@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="E:\Sts test\Hibernate\sample_project\uni-one-to-many\uni-one-to-many"/>
+			<item value="E:\Sts test\Hibernate\sample_project\uni-one-to-many\uni-one-to-many\src"/>
+			<item value="E:\Sts test\Hibernate\sample_project\hello-world\hello-world"/>
+			<item value="E:\Sts test\Hibernate\sample_project\bookstore (1)"/>
+			<item value="E:\Sts test\springdatajpa_Complete\spring-data-jpa-course"/>
+			<item value="E:\Sts test\spring data jpa\spring-data-jpa-course\spring-data-jpa-course"/>
+			<item value="E:\gittest\Spring_Boot_Jwt_Security_token\spring-boot-jwt-without-JPA\spring-boot-jwt"/>
+			<item value="E:\Sts test\test\spring-boot-security-jwt-refresh-_1_\spring-boot-security-jwt-refresh"/>
+			<item value="E:\test\Spring_Boot_Jwt\Spring_Boot_Jwt"/>
+			<item value="E:\IntelliJ test\Spring_Boot_Jwt_Security_token\spring-boot-jwt-without-JPA\spring-boot-jwt"/>
+			<item value="E:\Sts test\security online\spring-boot-jwt-JPA_1\spring-boot-jwt-JPA"/>
+			<item value="E:\Sts test\security online\spring-boot-jwt-without-JPA-_2_\spring-boot-jwt-without-JPA"/>
+			<item value="E:\Sts test\security online\spring-boot-jwt-without-JPA-_2_\spring-boot-jwt-without-JPA\spring-boot-jwt"/>
+			<item value="E:\Sts test\test\spring-boot-security-jwt-refresh-_1_"/>
+			<item value="E:\Sts test\security online\spring-boot-security-jwt-refresh\spring-boot-security-jwt-refresh"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="com.tut"/>
+		</list>
+		<list key="groupId">
+			<item value="com.tut"/>
+		</list>
+		<list key="artifactId">
+			<item value="ProjectWithMaven"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>
