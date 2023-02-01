@@ -21,21 +21,20 @@ public class App {
 		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 
 		// creating student
-		Student st = new Student();
-		st.setId(102);
-		st.setName("PARVEZ");
-		st.setCity("NEW YORK");
-		System.out.println(st);
-
+		/*
+		 * Student st = new Student(); st.setId(103); st.setName("Parvez");
+		 * st.setCity("London"); System.out.println(st);
+		 */
 		// creating the object of address class
+
 		Address ad = new Address();
-		ad.setStreet("street1");
+		ad.setStreet("street 2");
 		ad.setCity("DELHI");
 		ad.setOpen(true);
 		ad.setAddedDate(new Date());
 		ad.setX(1234.234);
 
-		// reading image
+		// reading image 
 		FileInputStream fis = new FileInputStream("src/main/java/images.jpeg");
 		byte[] data = new byte[fis.available()];
 		fis.read(data);
@@ -43,8 +42,8 @@ public class App {
 
 		Session session = factory.openSession();
 		Transaction tx = session.beginTransaction();
-		session.save(st);
-		session.save(ad);
+		//session.save(st);
+		 session.save(ad);
 		tx.commit();
 		session.close();
 		System.out.println("Done....");
