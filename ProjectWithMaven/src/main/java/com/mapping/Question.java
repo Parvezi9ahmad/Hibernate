@@ -1,11 +1,14 @@
 package com.mapping;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -16,20 +19,18 @@ public class Question {
 	private Long questionId;
 	private String question;
 
-	@OneToOne
-	@JoinColumn(name = "a_id")
-	private Answer answer;
-
-	public Question(Long questionId, String question, Answer answer) {
-		super();
-		this.questionId = questionId;
-		this.question = question;
-		this.answer = answer;
-	}
+	@OneToMany(mappedBy="q")
+	private List<Answer> answers;
 
 	public Question() {
 		super();
-		// TODO Auto-generated constructor stub
+	}
+
+	public Question(Long questionId, String question, List<Answer> answers) {
+		super();
+		this.questionId = questionId;
+		this.question = question;
+		this.answers = answers;
 	}
 
 	public Long getQuestionId() {
@@ -48,12 +49,17 @@ public class Question {
 		this.question = question;
 	}
 
-	public Answer getAnswer() {
-		return answer;
+	@Override
+	public String toString() {
+		return "Question [questionId=" + questionId + ", question=" + question + ", answers=" + answers + "]";
 	}
 
-	public void setAnswer(Answer answer) {
-		this.answer = answer;
+	public List<Answer> getAnswers() {
+		return answers;
+	}
+
+	public void setAnswers(List<Answer> answers) {
+		this.answers = answers;
 	}
 
 }
