@@ -1,0 +1,22 @@
+package com.tut;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class EmpDemo {
+
+	public static void main(String[] args) {
+
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session session = factory.openSession();
+
+		Student student1 = new Student();
+		student1.setId(14134);
+		student1.setName("Alex");
+		student1.setCity("NewYork");
+
+		session.close();
+		factory.close();
+	}
+}

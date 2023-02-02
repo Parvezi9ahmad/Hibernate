@@ -1,0 +1,9 @@
+package com.mapping;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.mapping;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class MapDemo {
+
+	public static void main(String[] args) {
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session session = factory.openSession();
+
+		Question question = new Question();
+		question.setQuestionId(1212);
+		question.setQuestion("What is java");
+
+		Answer answer = new Answer();
+		answer.setAnswerid(34);
+		answer.setAnswer("Java is a programming language");
+
+		session.close();
+		factory.close();
+	}
+
+}
