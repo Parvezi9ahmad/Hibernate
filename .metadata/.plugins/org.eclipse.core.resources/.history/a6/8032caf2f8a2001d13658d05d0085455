@@ -1,0 +1,46 @@
+package com.mapping1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class MappingDemo1 {
+
+	public static void main(String[] args) {
+
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+
+		Emp emp = new Emp();
+		emp.setEid(1);
+		emp.setName("James");
+
+		Project p1 = new Project();
+		p1.setPid(1212);
+		p1.setProjectname("Library management System");
+
+		Project p2 = new Project();
+		p2.setPid(3232);
+		p2.setProjectname("chatbot");
+
+		List<Project> list = new ArrayList<>();
+		list.add(p1);
+		list.add(p2);
+
+		emp.setProjects(list);
+
+		Session session = factory.openSession();
+		Transaction tx = session.beginTransaction();
+		session.save(emp);
+		session.save(p1);
+		session.save(p2);
+		tx.commit();
+		session.close();
+		factory.close();
+
+	}
+
+}

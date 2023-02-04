@@ -1,0 +1,6 @@
+package com.mapping1;
+
+public class Project {
+	private int pid;
+	private String projectname;
+}

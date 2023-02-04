@@ -1,0 +1,39 @@
+package com.mapping1;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+
+@Entity
+public class Project {
+
+	public Project() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Project(int pid, String projectname) {
+		super();
+		this.pid = pid;
+		this.projectname = projectname;
+	}
+	public int getPid() {
+		return pid;
+	}
+	public void setPid(int pid) {
+		this.pid = pid;
+	}
+	public String getProjectname() {
+		return projectname;
+	}
+	public void setProjectname(String projectname) {
+		this.projectname = projectname;
+	}
+	@Id
+	private int pid;
+	@Column(name = "project_name")
+	private String projectname;
+	
+	@ManyToMany
+	private Emp emp;
+}
