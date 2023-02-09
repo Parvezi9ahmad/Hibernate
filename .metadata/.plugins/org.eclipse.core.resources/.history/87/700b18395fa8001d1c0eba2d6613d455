@@ -1,0 +1,22 @@
+package com.criteria;
+
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.tut.Student;
+
+public class CriteriaExample {
+	@SuppressWarnings("deprecation")
+	public static void main(String[] args) {
+
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session session = factory.openSession();
+
+		Criteria c = session.createCriteria(Student.class);
+		
+		session.close();
+		factory.close();
+	}
+}

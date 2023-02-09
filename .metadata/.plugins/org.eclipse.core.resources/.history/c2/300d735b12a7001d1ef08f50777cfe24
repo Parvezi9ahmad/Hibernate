@@ -1,0 +1,27 @@
+package com.hql;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
+
+public class HQLExample {
+
+	public static void main(String[] args) {
+
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session s = factory.openSession();
+
+		// HQL
+		// Syntax
+		String query = "from Student";
+		Query q = s.createQuery(query);
+		
+		//single-unique
+		//multipl
+
+		s.close();
+		factory.close();
+	}
+
+}

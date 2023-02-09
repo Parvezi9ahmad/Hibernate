@@ -1,0 +1,25 @@
+package com.cascade;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.mapping.Answer;
+import com.mapping.Question;
+
+public class CascadeExample {
+	public static void main(String[] args) {
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session session = factory.openSession();
+
+		Question q1 = new Question();
+		q1.setQuestionId(567L);
+		q1.setQuestion("what is cascading ...");
+		
+		Answer a1 = new Answer(23423,"In hibernate It is important");
+		
+		
+		session.close();
+		factory.close();
+	}
+}

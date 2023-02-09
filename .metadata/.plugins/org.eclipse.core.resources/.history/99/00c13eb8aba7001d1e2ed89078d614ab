@@ -1,0 +1,45 @@
+package com.hql;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
+
+import com.tut.Student;
+
+public class HQLExample {
+
+	public static void main(String[] args) {
+
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+		Session s = factory.openSession();
+
+		// HQL
+		// Syntax
+		/*
+		 * String query = "from Student as s where s.city=:x and s.name=:n"; Query q =
+		 * s.createQuery(query); q.setParameter("x", "ABC"); q.setParameter("n",
+		 * "john");
+		 * 
+		 * // single-unique // multipl List<Student> list = q.list();
+		 * list.forEach(student -> { System.out.println(student.getName() + "   " +
+		 * student.getCerti().getCourse()); });
+		 * 
+		 */
+
+		String query = "from Student where name=:'n' and city=:'o'";
+
+		Query q = s.createQuery(query);
+		q.setParameter("n", "john");
+		q.setParameter("o", "ABC");
+		List<Student> list = q.list();
+		list.forEach(p -> {
+			System.out.println(p.getName());
+		});
+		s.close();
+		factory.close();
+	}
+
+}

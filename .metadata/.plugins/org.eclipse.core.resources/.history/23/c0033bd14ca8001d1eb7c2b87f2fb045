@@ -1,0 +1,11 @@
+package com.secondcache;
+
+import net.sf.ehcache.hibernate.EhCacheRegionFactory;
+
+public class SecondCacheExample {
+
+	public static void main(String[] args) {
+ EhCacheRegionFactory
+	}
+
+}

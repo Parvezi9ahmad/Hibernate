@@ -1,0 +1,15 @@
+package com.tut;
+
+public class StateDemo {
+
+	public static void main(String[] args) {
+
+		//Transient
+		//persistent
+		//detached
+		//Remove
+		
+		
+	}
+
+}

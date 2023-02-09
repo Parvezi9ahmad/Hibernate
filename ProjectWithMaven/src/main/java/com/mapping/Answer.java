@@ -16,12 +16,19 @@ public class Answer {
 	@Column(name = "answer_id")
 	private Long answerid;
 
+	
+
 	private String answer;
 
 	@ManyToOne
 	@JoinColumn(name="a_id")
 	private Question q;
 
+	public Answer(Long answerid, String answer) {
+		super();
+		this.answerid = answerid;
+		this.answer = answer;
+	}
 	public Answer() {
 		super();
 		// TODO Auto-generated constructor stub

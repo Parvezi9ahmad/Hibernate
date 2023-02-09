@@ -1,0 +1,7 @@
+package com.sqlquery;
+
+public class SqlExample {
+	public static void main(String[] args) {
+
+	}
+}
