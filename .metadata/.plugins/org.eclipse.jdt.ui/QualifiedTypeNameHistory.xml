@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
@@ -57,7 +56,8 @@
     <fullyQualifiedTypeName name="javax.persistence.Cacheable"/>
     <fullyQualifiedTypeName name="org.hibernate.annotations.CacheConcurrencyStrategy"/>
     <fullyQualifiedTypeName name="org.hibernate.annotations.Cache"/>
-    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
     <fullyQualifiedTypeName name="org.hibernate.cache.ehcache.internal.EhcacheRegionFactory"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
     <fullyQualifiedTypeName name="com.tut.Student"/>
+    <fullyQualifiedTypeName name="org.hibernate.criterion.Restrictions"/>
 </qualifiedTypeNameHistroy>
